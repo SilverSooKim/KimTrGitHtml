@@ -24,6 +24,7 @@
             if(confirm("ok")){
                 alert("ok");
                 document.getElementById("id").value="dasfasf";
+                document.getElementById("newBox").innerHTML="<input type=text>";
                 document.getElementById("h6text").style.color="green";
                 document.getElementById("newBox").style.backgroundColor="yellow";
             }
@@ -35,8 +36,21 @@
             background-color: beige;
         }
         #newBox{
+            /*
+            block : 줄바꿈 전체(inline-block 부분 특징)
+            inline : 줄바꿈없음(inline-block 부분 특징), 실제 글자가 입력 부분만..
+            inline : 줄바꿈없음, 지정된 크기 전체
+            */
+            display: inline-block;
             background-color: aqua;
-            width: 700px;
+            width: 200px;
+        }
+
+        #newBox1{
+            display: inline-block;
+
+            background-color: aqua;
+            width: 200px;
         }
         .hText{
             background-color: brown;
@@ -68,11 +82,17 @@
     <h4 class="hText"> header 4</h4>
     <h5>header 5</h5>
     <h6 id="h6text">header 6</h6>
-    <input type="text" id="id" value="ddd"></input>
-    <input type="button" value="버튼" onclick="funTest()">    
+   
+    <div id="btmBox">
+        <input type="text" id="id" value="ddd"></input>
+        <input type="button" value="버튼" onclick="funTest()"> 
+    </div>
+       
     <div id="newBox">
-        <h4>header 4</h4>
-
+        newBox
+    </div>
+    <div id="newBox1">
+        newBox1
     </div>
 </body>
 </html>
