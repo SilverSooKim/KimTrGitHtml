@@ -42,12 +42,25 @@
             background-color: brown;
         }
 
+        body h1{   /*body 아래의 h1*/
+            color:blue;
+        }
+
+        body > h2{ /* 바로 아래 자손*/
+            color:burlywood;
+        }
+
 
     </style>
 </head>
 <body>
     <h1>Header 1</h1>
     <h2>Header 2</h2>
+    <div>
+        <h1>Header 1-1</h1>
+        <h2>Header 2-1</h2>
+
+    </div>
     <hr>
     <!--는 본문 태그-->
     <p> 안녕하세요 반갑습니다.</p>
