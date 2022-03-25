@@ -18,6 +18,16 @@
     <meta http-equiv="Refresh" content="1; url=./01_구조.html"/> <!-- 동적인 효과 화면이동-->
     <link href="common.css" rel="stylesheet" type="text/css"/>
     <title>Document</title>
+    <script>
+        function funTest(){
+            alert("클릭");
+            if(confirm("ok")){
+                alert("ok");
+                document.getElementById("id").value="dasfasf";
+                document.getElementById("h6text").style.color="green";
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Header 1</h1>
@@ -28,7 +38,8 @@
     <h3>header 3</h3>
     <h4>header 4</h4>
     <h5>header 5</h5>
-    <h6>header 6</h6>
-    
+    <h6 id="h6text">header 6</h6>
+    <input type="text" id="id" value="ddd"></input>
+    <input type="button" value="버튼" onclick="funTest()">    
 </body>
 </html>
