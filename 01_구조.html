@@ -25,9 +25,25 @@
                 alert("ok");
                 document.getElementById("id").value="dasfasf";
                 document.getElementById("h6text").style.color="green";
+                document.getElementById("newBox").style.backgroundColor="yellow";
             }
         }
     </script>
+    <style>
+        body{
+            width: 800px;
+            background-color: beige;
+        }
+        #newBox{
+            background-color: aqua;
+            width: 700px;
+        }
+        .hText{
+            background-color: brown;
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>Header 1</h1>
@@ -35,11 +51,15 @@
     <hr>
     <!--는 본문 태그-->
     <p> 안녕하세요 반갑습니다.</p>
-    <h3>header 3</h3>
-    <h4>header 4</h4>
+    <h3 class="hText">header 3</h3>
+    <h4 class="hText"> header 4</h4>
     <h5>header 5</h5>
     <h6 id="h6text">header 6</h6>
     <input type="text" id="id" value="ddd"></input>
     <input type="button" value="버튼" onclick="funTest()">    
+    <div id="newBox">
+        <h4>header 4</h4>
+
+    </div>
 </body>
 </html>
