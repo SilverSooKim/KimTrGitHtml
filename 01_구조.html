@@ -40,13 +40,16 @@
            border : 1px solid #000;
            padding: 10px 0px 0px 20px; /* top right bottom left*/
            /*
-           block : 줄바꿈 전체(inline-block 부분 특징)
+           block : 줄바꿈 전체(inline-block 부분 특징)-width, height를 설정이 가능함.
            inline : 줄바꿈없음(inline-block 부분 특징), 실제 글자가 입력 부분만..
            inline : 줄바꿈없음, 지정된 크기 전체
            */
            margin: 0px 0px 0px 0px;
           /* display: inline-block;*/
-           float: left; 
+           float: left;  /* block요소들을 가로배치 하기 위함.
+            Float하게되면 block으로 신분이 상승함.(inline, inline block 모두 block으로 변경됨)
+
+            */
            background-color: aqua;
            width: 200px;
            height: 300px;
