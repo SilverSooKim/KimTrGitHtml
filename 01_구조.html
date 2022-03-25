@@ -32,36 +32,48 @@
     </script>
     <style>
         body{
-            width: 800px;
-            background-color: beige;
+           width: 800px;
+           background-color: beige;
         }
         #newBox{
-            /*
-            block : 줄바꿈 전체(inline-block 부분 특징)
-            inline : 줄바꿈없음(inline-block 부분 특징), 실제 글자가 입력 부분만..
-            inline : 줄바꿈없음, 지정된 크기 전체
-            */
-            display: inline-block;
-            background-color: aqua;
-            width: 200px;
+           margin: 10px 0px 0px 0px; /* top right bottom left*/
+           border : 1px solid #000;
+           padding: 10px 0px 0px 20px; /* top right bottom left*/
+           /*
+           block : 줄바꿈 전체(inline-block 부분 특징)
+           inline : 줄바꿈없음(inline-block 부분 특징), 실제 글자가 입력 부분만..
+           inline : 줄바꿈없음, 지정된 크기 전체
+           */
+           margin: 0px 0px 0px 0px;
+          /* display: inline-block;*/
+           float: left; 
+           background-color: aqua;
+           width: 200px;
+           height: 300px;
         }
 
         #newBox1{
-            display: inline-block;
-
-            background-color: aqua;
-            width: 200px;
+           /*margin: 10px 0px 0px 0px;  top right bottom left*/
+           border : 1px solid #000;
+           padding: 10px 0px 0px 20px; /* top right bottom left*/
+           float: left;  /*옆으로 디자인 되는 것은 display로 하기가 힘들다, 여백이 생긴다*/
+           background-color: aqua;
+           width: 200px;
+           height: 300px;
+        }
+        #newGroup{
+            margin: 10px 0px 0px 0px;
         }
         .hText{
-            background-color: brown;
+           background-color: brown;
         }
 
         body h1{   /*body 아래의 h1*/
-            color:blue;
+           color:blue;
         }
 
         body > h2{ /* 바로 아래 자손*/
-            color:burlywood;
+           color:burlywood;
         }
 
 
@@ -87,12 +99,15 @@
         <input type="text" id="id" value="ddd"></input>
         <input type="button" value="버튼" onclick="funTest()"> 
     </div>
-       
-    <div id="newBox">
-        newBox
+    <div id="newGroup">
+        <div id="newBox">
+            newBoxddd
+        </div>
+        <div id="newBox1">
+            newBox1
+        </div>
+
     </div>
-    <div id="newBox1">
-        newBox1
-    </div>
+    
 </body>
 </html>
